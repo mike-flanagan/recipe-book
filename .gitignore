@@ -1,0 +1,11 @@
+keys.py
+# Yelp API user and keys
+.DS_Store
+# Local info
+
+PP_recipes.csv
+# Pre-processed data for recipes
+RAW_interactions.csv
+# Raw data for interactions
+RAW_recipes.csv
+# Raw data for recipes
