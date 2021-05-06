@@ -29,16 +29,19 @@ Once I have a recommender system that functions for public users, I will impleme
 There are other algorithms and implementations of recommender systems that I would like to explore — such as systems that use nueral networks, and implementations developed specifically for the AWS platform. Additionally, I would like to implement a content-based recommendation systems for item-to-item and user-to-user similarity, and possibly integrate them with my best model to create a hybrid-collaborative filtering model. I will also return to attempting to memory-based recommender system development with the use of distributed computing to further evaluate the results that I have seen so far.  
   
 ## Index
-- [**CRISP-DM-Drafts/**](https://github.com/mike-flanagan/recipe-book/tree/main/CRISP-DM-Drafts) — contains initial project development/data exploration file, initial EDA notebook file, and initial modeling notebook file. 
-- [**data/**](https://github.com/mike-flanagan/recipe-book/tree/main/data) — contains CSVs included with the dataset 
+- [**CRISP-DM-Drafts**](https://github.com/mike-flanagan/recipe-book/tree/main/CRISP-DM-Drafts) — contains initial project development/data exploration file, initial EDA notebook file, and initial modeling notebook file.  
+- [**code**](https://github.com/mike-flanagan/recipe-book/tree/main/code) — contains .py files of code used in notebooks.
+- [**data**](https://github.com/mike-flanagan/recipe-book/tree/main/data) — contains CSVs included with the dataset 
   - **Note:** the primary datasets used in the project are not included in this directory due to file size, and are available via my S3 cloud storage at the below links:  
     - [RAW_interactions.csv](https://s3.console.aws.amazon.com/s3/object/sagemaker-studio-t1ems8mtnoj?region=us-east-2&prefix=RAW_interactions.csv) — user interactions with recipes, including the date of the interaction, as well as the user's rating and review of the recipe.  
     - [RAW_recipes.csv](https://s3.console.aws.amazon.com/s3/object/sagemaker-studio-t1ems8mtnoj?region=us-east-2&prefix=RAW_recipes.csv)  
     - [ui_ratings.csv](https://s3.console.aws.amazon.com/s3/object/sagemaker-studio-t1ems8mtnoj?region=us-east-2&prefix=ui_ratings.csv) — user-item ratings utility matrix generated from the RAW interactions.
-- **images/**  — contains a PDF presentation of my findings, images files used for notebook and readme header, and output visualizations which were used in the presentation slides.
-- [**models/**](https://github.com/mike-flanagan/recipe-book/tree/main/models) — contains output/pickle files of models.  
-- **Recipe_Recommender_System_Notebook.ipynb** — primary, summative project notebook file.  
-- **README.md**  
+- [**images**](https://github.com/mike-flanagan/recipe-book/tree/main/images) — contains a PDF presentation of my findings, images files used for notebook and readme header, and output visualizations which were used in the presentation slides.  
+- [**models**](https://github.com/mike-flanagan/recipe-book/tree/main/models) — contains output/pickle files of models.  
+- .gitignore
+- [Presentation_Slides_RecipeBook.pdf](https://github.com/mike-flanagan/recipe-book/blob/main/Presentation_Slides_RecipeBook.pdf) — PDF of project presentation
+- [MF_Recipe_RecSystem_Notebook.ipynb](https://github.com/mike-flanagan/recipe-book/blob/main/MF_Recipe_RecSystem_Notebook.ipynb) — primary, summative project notebook file.  
+- README.md  
   
   
   
