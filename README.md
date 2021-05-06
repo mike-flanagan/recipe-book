@@ -1,6 +1,6 @@
-![image](https://github.com/mike-flanagan/vehicle_fuel_economy_analysis_neuralnet/blob/main/images/readme_header.jpg?raw=true)  
+![image](https://github.com/mike-flanagan/recipe-book/blob/main/images/lily-banse--YHSwy6uqvk-unsplash.jpg)  
   
-<div align="center";>Photo by <a href="https://unsplash.com/@ftm3000?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tommy Krombacher</a> on <a href="https://unsplash.com/s/photos/fuel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>  
+<div align="center";>Photo by <a href="https://unsplash.com/@lvnatikk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lily Banse</a> on <a href="https://unsplash.com/@lvnatikk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>  
   
 ## Overview  
 This repository contains all work involved in the development of a recipe recommendation system with the ultimate goal of launching a front-end web application.  
