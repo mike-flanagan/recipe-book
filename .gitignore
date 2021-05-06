@@ -1,11 +1,14 @@
 keys.py
-# Yelp API user and keys
+# USDA's FoodData Central API user and keys
 .DS_Store
 # Local info
-
+.ipynb_checkpoints
+# Notebook manual saves
 PP_recipes.csv
 # Pre-processed data for recipes
 RAW_interactions.csv
 # Raw data for interactions
 RAW_recipes.csv
 # Raw data for recipes
+ui_ratings.csv
+# Data file created in attempt to reduce memory consumption while modeling
