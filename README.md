@@ -47,7 +47,7 @@ There are other algorithms and implementations of recommender systems that I wou
   
 <div align="center";>Author  
   <div align="center";>Mike Flanagan  
-    <div align="center";>[flanalysis.com](https://flanalysis.com/)  
+    <div align="center";><a href="https://flanalysis.com/">flanalysis.com</a>  
   
 [GitHub](https://github.com/mike-flanagan/) | [LinkedIn](https://www.linkedin.com/in/mike-flanagan-data/) | [Medium](https://mike-flanagan.medium.com/)
   
