@@ -5,7 +5,8 @@
 ## Overview  
 This repository contains all work involved in the development of a recipe recommendation system with the ultimate goal of launching a front-end web application.  
   
-## Motivation  
+## Business Problem & Motivation  
+It seems today that there are endless resources available to a person who wishes to improve a skill, expand their hobbies, or explore any curiosity more deeply, yet such access is not always immediately empowering. It can burden an individual with decision paralysis, and also relies on the individual to have a critical eye and solid intuitions.  
 This project was motivated by the simple desire to improve the tools available for people to receive recipe recommendations personalized to their taste.
   
 ## Data  
