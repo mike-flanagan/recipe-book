@@ -1,4 +1,4 @@
-import streamlit
+import streamlit as st
 import boto3, re, sys, os, time, math, csv, json, pickle
 from os import system
 from math import floor
