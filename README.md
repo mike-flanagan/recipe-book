@@ -6,8 +6,11 @@
 This repository contains all work involved in the development of a recipe recommendation system with the ultimate goal of launching a front-end web application.  
   
 ## Business Problem & Motivation  
-It seems today that there are endless resources available to a person who wishes to improve a skill, expand their hobbies, or explore any curiosity more deeply, yet such access is not always immediately empowering. It can burden an individual with decision paralysis, and also relies on the individual to have a critical eye and solid intuitions.  
-This project was motivated by the simple desire to improve the tools available for people to receive recipe recommendations personalized to their taste.
+Some of the most successful and well known companies in the world use recommender systems to deliver products, services & content. *Google* uses recommender systems to target advertising, while *Amazon* uses them to connect customers on the platform to items that are more relevant and likely to be purchased, given the customer's profile. *Netflix*, *YouTube*, and many others do the same for content so that we may spend more time on their platform, and yet, when it comes to particular categories of items which play a larger role in a person's every-day life, such systems appear to be less utilized.  
+  
+While food delivery services (*Seamless*, *Postmates*, & *GrubHub*) and applications for grocery delivery (*Instacart*, *Fresh Direct*, etc.) most certainly utilize user data to connect their customers with content that is curated to be more relevant for them, there has yet to be a service for food *recipes* that has become ubiquitous — that is, while there are many resources for a person to find recipes, no single resource has dominated the field.  
+  
+In developing a food recipe recommender system, I hope to empower individuals with a tool that will allow them to better curate their life. With this system, a user will be able to discover a vast world of recipes personalized to them.
   
 ## Data  
 This dataset consists of 180K+ recipes and 700K+ recipe reviews covering 18 years of user interactions and uploads on [Food.com](https://www.food.com/). It includes a pickle file that contains the identities of tokenized recipe ingredients, and includes versions of several CSV files for recipes & interactions, as well as versions that have been pre-processed for natural language processing.  
