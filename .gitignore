@@ -1,3 +1,5 @@
+code/__pycache__
+# pychache in code directory
 keys.py
 # USDA's FoodData Central API user and keys
 .DS_Store
