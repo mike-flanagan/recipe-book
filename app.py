@@ -27,29 +27,32 @@ import numpy as np
 # Custom Libraries
 from code.functions import *
 from code.recipe_data_loader import load_recipe_names
+from io import BytesIO # for header image
+from PIL import Image
+from pathlib import Path
+import base64
+
+def img_to_bytes(img_path):
+    img_bytes = Path(img_path).read_bytes()
+    encoded = base64.b64encode(img_bytes).decode()
+    return encoded
+    
+header_url = 'https://github.com/mike-flanagan/recipe-book/blob/main/images/app_assets/sate_logo_creamsicle.png'
+header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("images/app_assets/sate_logo_creamsicle.png"))
+st.markdown(header_html, unsafe_allow_html=True)
+
 # from recommenders.collaborative_based import collab_model
 # from recommenders.content_based import content_model
 
-st.title('Sate')
-st.write('the recipe book with your taste in mind')
+# image = Image.open('images/app_assets/sate_logo_creamsicle.png')
+# st.image(image, width=350)
+# st.markdown(f"<h1 style='text-align: center; color: red;'>{image}</h1>", unsafe_allow_html=True)
 
 # Data
 recipe_list = load_recipe_names('data/RAW_recipes.csv')
 
 # App declaration
 def main():
-    
-    def img_to_bytes(img_path):
-        img_bytes = Path(img_path).read_bytes()
-        encoded = base64.b64encode(img_bytes).decode()
-        return encoded
-    
-    header_url = 'images/app_assets/sate_logo_creamsicle.png'
-    header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("sate.png"))
-    st.markdown(header_html, unsafe_allow_html=True)
-    
-    # DO NOT REMOVE the 'Recommender System' option below, however,
-    # you are welcome to add more options to enrich your app.
     page_options = ["Recommend Recipes","Solution Overview"]
     page_selection = st.sidebar.selectbox("Choose Option", page_options)
     if page_selection == "Recommend Recipes":

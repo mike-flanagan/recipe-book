@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd                               
 import matplotlib.pyplot as plt  
 import seaborn as sns
+import requests
 from wordcloud import WordCloud, STOPWORDS 
 from surprise.similarities import cosine, msd, pearson
 from surprise.prediction_algorithms import SVD, KNNWithMeans, KNNBaseline, CoClustering, BaselineOnly
@@ -51,6 +52,43 @@ def get_top_n(predictions, n=10):
 
     return top_n
 
+def tags_to_csv(tags_list):
+    """
+    Write CSVs of recipes based on one of its tags.
+
+    Parameters: 
+        
+        tags_list — a list containing strings that correspond to recipe tags (rdf['tags']).
+
+    Returns:
+        
+        Writes CSV files to path: data/cuisines/tag_string.csv
+    """
+    for i in tags_list:
+        tag_recipes = rdf[rdf.tags.str.contains(i, case=False) == True]
+        tag_recipes.to_csv(f'data/cuisine/{i}.csv')
+
+def read_img_url(url):
+    """
+    Read and resize image directly from a url
+    ============
+    Args:
+    
+        url
+        
+        - Image source URL.
+    
+    Attribution:
+        
+        This (partially modified) function was borrowed from Justin Tennenbaum's ColorGan Streamlit application.
+        https://github.com/jmt0221/
+        https://github.com/jmt0221/ColorGan/blob/master/streamlit/app.py
+        
+    """
+    response = requests.get(url)
+    img = Image.open(BytesIO(response.content))
+    return img
+    
 # def head(data='interactions', disp_head=3):
 #     """
 #     ### Dev. note: THIS WOULD BE BETTER WITHIN A DEFINED CLASS SO THAT I COULD SWITCH IT UP MORE EASILY ###
