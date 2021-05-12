@@ -1,3 +1,30 @@
+# import libraries
+import boto3, re, sys, os, time, math, csv, json, pickle, urllib.request
+from sys import getsizeof
+from os import system
+from time import gmtime, strftime                 
+from math import floor
+from copy import deepcopy
+from collections import defaultdict
+import numpy as np                                
+import pandas as pd                               
+import matplotlib.pyplot as plt  
+import seaborn as sns
+from wordcloud import WordCloud, STOPWORDS 
+from surprise.similarities import cosine, msd, pearson
+from surprise.prediction_algorithms import SVD, KNNWithMeans, KNNBaseline, CoClustering, BaselineOnly
+from surprise.model_selection import GridSearchCV, cross_validate, train_test_split
+from surprise import Reader, Dataset, accuracy, dump
+from IPython.display import Image                 
+from IPython.display import display               
+# from surprise.prediction_algorithms import SVD, knns, KNNWithMeans, KNNBasic, KNNBaseline, KNNWithZScore, CoClustering, BaselineOnly, NormalPredictor, NMF, SVDpp, SlopeOne # these were all packages I originally played with, cut out to improve memory utilization
+
+# Setting display options for DataFrames and plots
+pd.set_option('display.max_rows', 6)
+pd.set_option('display.max_columns', 20)
+pd.set_option('display.max_colwidth', 200)
+sns.set_theme(font_scale=1.5)
+
 def get_top_n(predictions, n=10):
     """Return the top-N recommendation for each user from a set of predictions.
 
