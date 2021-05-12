@@ -38,14 +38,19 @@ recipe_list = load_recipe_names('data/RAW_recipes.csv')
 
 # App declaration
 def main():
-
+    
+    def img_to_bytes(img_path):
+        img_bytes = Path(img_path).read_bytes()
+        encoded = base64.b64encode(img_bytes).decode()
+        return encoded
+    
+    header_url = 'images/app_assets/sate_logo_creamsicle.png'
+    header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("sate.png"))
+    st.markdown(header_html, unsafe_allow_html=True)
+    
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
     page_options = ["Recommend Recipes","Solution Overview"]
-
-    # -------------------------------------------------------------------
-    # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
-    # -------------------------------------------------------------------
     page_selection = st.sidebar.selectbox("Choose Option", page_options)
     if page_selection == "Recommend Recipes":
         # Header contents
