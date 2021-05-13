@@ -209,7 +209,7 @@ def main():
     st.write('### Select recipes that you rate highly.')
     recipe_1 = st.selectbox('Favorite Recipe 1', filtered_recipe_list[4400:4475])
     recipe_2 = st.selectbox('Favorite Recipe 2', filtered_recipe_list[1430:1485])
-    recipe_3 = st.selectbox('Favorite Recipe 3', filtered_recipe_list[3280:3310])
+    recipe_3 = st.selectbox('Favorite Recipe 3', filtered_recipe_list[2980:3020])
     recipe_4 = st.selectbox('Favorite Recipe 4', filtered_recipe_list[3930:3965])
     recipe_5 = st.selectbox('Favorite Recipe 5', filtered_recipe_list[2050:2085])
     fav_recipes = [recipe_1, recipe_2, recipe_3, recipe_4, recipe_5]
