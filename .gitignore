@@ -14,5 +14,7 @@ RAW_recipes.csv
 # Raw data for recipes
 ui_ratings.csv
 # Data file created in attempt to reduce memory consumption while modeling
+data/slim_interactions.csv
+data/slim_recipes.csv
 data/cuisine
 # Folder containing many large data files
